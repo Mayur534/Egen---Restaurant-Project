@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <title>Owner Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="ownerStyle.css" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+
+      <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div class="title">The Exquisite Cuisine
+            </div>
+<hr color="#000">
+            <br><br>
+          <ul class="nav nav-sidebar">
+
+            <li><a data-toggle="tab" href="#signIn">Sign in</a></li>
+            <li><a data-toggle="tab" href="#currReserv">Current Reservations</a></li>
+            <li><a data-toggle="tab" href="#seating">Seating</a></li>
+            <li><a data-toggle="tab" href="#profile">Profile Settings</a></li>
+
+             
+
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a data-toggle="tab" href="#signOut">Sign out</a></li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+            <div class="tab-content">
+        <div id="signIn" class="tab-pane fade in active">
+
+
+          <form class="form-signin">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <h2 align="center"> OR </h2>
+    <a  class="btn btn-lg btn-primary btn-block" type="submit"> Sign up</a>
+  </form>
+</div>
+
+
+
+<div id="currReserv" class="tab-pane fade">
+    <h1 class="page-header">Dashboard</h1>
+          <h2 class="sub-header">Reservations   <a href="#"><span class="glyphicon glyphicon-calendar"></span></a></h2>
+
+
+    <form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search reservations">
+    </form>
+    <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li class="disabled"><a href="#">2</a></li>
+        <li class="disabled"><a href="#">3</a></li>
+        <li class="disabled"><a href="#">4</a></li>
+        <li class="disabled"><a href="#">5</a></li>
+    </ul>
+
+          <div class="table-responsive">
+            <table class="table table-condensed table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Confirmation #</th>
+                  <th>Customer Name</th>
+                  <th>Phone Number</th>
+                  <th>Reservation Date</th>
+                  <th>Reservation Time</th>
+                  <th>Party Size</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1001</td>
+                  <td>Aaron Flick</td>
+                  <td>469 234 5678</td>
+                  <td>07/24/2015</td>
+                  <td>20.00 hrs</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>1002</td>
+                  <td>Lewis Portland</td>
+                  <td>972 123 4567</td>
+                  <td>08/01/2015</td>
+                  <td>16.00 hrs</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>1003</td>
+                  <td>Chris Irwin</td>
+                  <td>214 123 2343</td>
+                  <td>08/02/2015</td>
+                  <td>18.00 hrs</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>1004</td>
+                  <td>Robredo Martinez</td>
+                  <td>914 123 4567</td>
+                  <td>08/05/2015</td>
+                  <td>12.00 hrs</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>1005</td>
+                  <td>Hamza Rangooni</td>
+                  <td>469 000 0000</td>
+                  <td>08/10/2015</td>
+                  <td>21.00 hrs</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" src="table_reserve.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Make Reservation</h2>
+                <p>Make sure to provide your details</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#make">Make Reservation</button>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="modal fade" id="make" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class = "modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                            </button>
+                            <h5>FIRST</h5>
+                        </div>
+
+
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="email">Name</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Phone Number</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                                <div class="form-group">
+                                    <label for="psize">Party Size (No. of guests)</label>
+                                    <input type="number" class="form-control" id="psize">
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="reserveDate">Reservation Date</label>
+                                            <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="reserveTime">Reservation Time</label>
+                                            <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-default">Reserve</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="img-circle" src="change.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Edit Reservation</h2>
+                <p>Make sure you have the reservation details.</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#change">Change Reservation</button>
+
+            </div><!-- /.col-lg-4 -->
+
+            <div class="modal fade" id="change" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <h3>Please provide Confirmation number to cancel your reservation</h3>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="confirmCodeChange">Confirmation Number:</label>
+                                    <input type="text" class="form-control" id="confirmCodeChange">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-default">Confirm</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="img-circle" src="cancel.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Cancel Reservation</h2>
+                <p>Make sure you have all the reservation details.</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cancel">Cancel Reservation</button>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="modal fade" id="cancel" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <h3>Please provide Confirmation number to cancel your reservation</h3>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="confirmCodeCancel">Confirmation Number:</label>
+                                    <input type="text" class="form-control" id="confirmCodeCancel">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-default">Change</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
+    </div>
+        </div>
+
+        <div id="seating" class="tab-pane fade">
+            <h1 class="page-header">Dashboard</h1>
+            <h2 class="sub-header">Seating  <a href="#"><span class="glyphicon glyphicon-cutlery"></span></a></h2>
+
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search table">
+            </form>
+
+            <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+
+
+
+                <div class="table-responsive">
+                <table class="table table-condensed table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>Table #</th>
+                        <th>Size</th>
+                        <th>Table Status</th>
+                        <th>Reservation Time</th>
+                        <th>Confirmation #</th>
+                        <th>Customer Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>6</td>
+                        <td>Occupied</td>
+                        <td>20.00 hrs</td>
+                        <td>1001</td>
+                        <td>Aaron Flick</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>5</td>
+                        <td>Occupied</td>
+                        <td>12.00 hrs</td>
+                        <td>1002</td>
+                        <td>Lewis Portland</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>4</td>
+                        <td>Vacant</td>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>8</td>
+                        <td>Vacant</td>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>10</td>
+                        <td>Occupied</td>
+                        <td>21.00 hrs</td>
+                        <td>1005</td>
+                        <td>Hamza Rangooni</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+<h2>MAP</h2>
+
+            <div class="occupied">Table 1 is occupied by <a href="#">#1001</a></div>
+            <div class="occupied">Table 2 is occupied by <a href="#">#1002</a></div>
+            <div class="vacant">Table 3 is vacant</div>
+            <div class="vacant">Table 4 is vacant</div>
+            <div class="occupied">Table 5 is occupied by <a href="#">#1005</a></div>
+
+
+        </div>
+
+        <div id="profile" class="tab-pane fade">
+            <h1 class="page-header">Dashboard</h1>
+            <br>
+            <h2 class="sub-header">Auto-Assign Enabled <input type="checkbox" checked data-toggle="toggle"></h2>
+<br><br>
+            <h2 class="sub-header">Reastaurant Hours   <a href="#"><span class="glyphicon glyphicon-calendar"></span></a></h2>
+
+
+
+
+            <div class="table-responsive">
+                <table class="table table-condensed table-bordered table-hover">
+
+                    <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Closed</td>
+                        <td> <button class="btn btn-primary" title="Change">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <span class="btn-text">Change</span>
+                        </button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>8 am - 10 pm</td>
+                        <td> <button class="btn btn-primary" title="Change">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <span class="btn-text">Change</span>
+                        </button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8 am - 10 pm</td>
+                        <td> <button class="btn btn-primary" title="Change">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <span class="btn-text">Change</span>
+                        </button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>8 am - 10 pm</td>
+                        <td> <button class="btn btn-primary" title="Change">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <span class="btn-text">Change</span>
+                        </button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8 am - 10 pm</td>
+                        <td> <button class="btn btn-primary" title="Change">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <span class="btn-text">Change</span>
+                        </button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10 pm - Midnight</td>
+                        <td> <button class="btn btn-primary" title="Change">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <span class="btn-text">Change</span>
+                        </button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10 pm - 10 pm</td>
+                        <td> <button class="btn btn-primary" title="Change">
+                            <span class="glyphicon glyphicon-share"></span>
+                            <span class="btn-text">Change</span>
+                        </button>
+                        </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div id="signOut" class="tab-pane fade"> <a href="#"><i class="fa fa-facebook-square"></i></a>
+        <div class="alert-success">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> You have been successfully signed out.
+  </div>
+</div>
+
+        </div>
+            </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
